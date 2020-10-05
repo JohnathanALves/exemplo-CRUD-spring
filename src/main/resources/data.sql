@@ -62,27 +62,27 @@ CREATE TABLE submission (
     FOREIGN KEY (challenge_id) REFERENCES challenge(id)
 );
 
-INSERT INTO user (id, full_name, email, nickname, password) VALUES (1, 'GERALDO AZEVEDO', 'geraldo@email.com', 'GERALDO', 'password');
-INSERT INTO user (id, full_name, email, nickname, password) VALUES (2, 'TIM MAIA', 'tim@email.com', 'TIM', 'password');
-INSERT INTO user (id, full_name, email, nickname, password) VALUES (3, 'ELBA RAMALHO', 'elba@email.com', 'ELBA', 'password');
-INSERT INTO user (id, full_name, email, nickname, password) VALUES (4, 'JONAS ESTICADO', 'jonas@email.com', 'JONAS', 'password');
-INSERT INTO user (id, full_name, email, nickname, password) VALUES (5, 'KID ABELHA', 'kid@email.com', 'KID', 'password');
+INSERT INTO user (id, full_name, email, nickname, password) VALUES (100001, 'GERALDO AZEVEDO', 'geraldo@email.com', 'GERALDO', 'password');
+INSERT INTO user (id, full_name, email, nickname, password) VALUES (100002, 'TIM MAIA', 'tim@email.com', 'TIM', 'password');
+INSERT INTO user (id, full_name, email, nickname, password) VALUES (100003, 'ELBA RAMALHO', 'elba@email.com', 'ELBA', 'password');
+INSERT INTO user (id, full_name, email, nickname, password) VALUES (100004, 'JONAS ESTICADO', 'jonas@email.com', 'JONAS', 'password');
+INSERT INTO user (id, full_name, email, nickname, password) VALUES (100005, 'KID ABELHA', 'kid@email.com', 'KID', 'password');
 
-INSERT INTO challenge (id, name, slug) VALUES (1, 'Quem canta melhor', 'canta-melhor');
+INSERT INTO challenge (id, name, slug) VALUES (100001, 'Quem canta melhor', 'canta-melhor');
 
-INSERT INTO company (id, name, slug) VALUES (1, 'Companhia musical', 'musical-Corp');
+INSERT INTO company (id, name, slug) VALUES (100001, 'Companhia musical', 'musical-Corp');
 
-INSERT INTO acceleration (id, name, slug, challenge_id) VALUES (1, 'Aceleracao', 'acc', 1);
+INSERT INTO acceleration (id, name, slug, challenge_id) VALUES (100001, 'Aceleracao', 'acc', 100001);
 
-INSERT INTO candidate (user_id, acceleration_id, company_id, status) VALUES (1, 1, 1, 2);
-INSERT INTO candidate (user_id, acceleration_id, company_id, status) VALUES (2, 1, 1, 2);
-INSERT INTO candidate (user_id, acceleration_id, company_id, status) VALUES (3, 1, 1, 2);
-INSERT INTO candidate (user_id, acceleration_id, company_id, status) VALUES (4, 1, 1, 2);
-INSERT INTO candidate (user_id, acceleration_id, company_id, status) VALUES (5, 1, 1, 2);
+INSERT INTO candidate (user_id, acceleration_id, company_id, status) VALUES (100001, 100001, 100001, 2);
+INSERT INTO candidate (user_id, acceleration_id, company_id, status) VALUES (100002, 100001, 100001, 2);
+INSERT INTO candidate (user_id, acceleration_id, company_id, status) VALUES (100003, 100001, 100001, 2);
+INSERT INTO candidate (user_id, acceleration_id, company_id, status) VALUES (100004, 100001, 100001, 2);
+INSERT INTO candidate (user_id, acceleration_id, company_id, status) VALUES (100005, 100001, 100001, 2);
 
 
-INSERT INTO submission (user_id, challenge_id, score) VALUES (1, 1, 9.5);
-INSERT INTO submission (user_id, challenge_id, score) VALUES (2, 1, 7.5);
-INSERT INTO submission (user_id, challenge_id, score) VALUES (3, 1, 8.3);
-INSERT INTO submission (user_id, challenge_id, score) VALUES (4, 1, 5.0);
-INSERT INTO submission (user_id, challenge_id, score) VALUES (5, 1, 9.0);
+INSERT INTO submission (user_id, challenge_id, score) VALUES (100001, 100001, 9.5);
+INSERT INTO submission (user_id, challenge_id, score) VALUES (100002, 100001, 7.5);
+INSERT INTO submission (user_id, challenge_id, score) VALUES (100003, 100001, 8.3);
+INSERT INTO submission (user_id, challenge_id, score) VALUES (100004, 100001, 5.0);
+INSERT INTO submission (user_id, challenge_id, score) VALUES (100005, 100001, 9.0);

@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("challenge/")
+@RequestMapping("challenge")
 public class ChallengeController {
 
     @Autowired

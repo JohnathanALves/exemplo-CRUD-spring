@@ -8,7 +8,7 @@ import teste.tecnico.desafio.repositories.CandidateRepository;
 import java.util.List;
 
 @RestController
-@RequestMapping("candidate/")
+@RequestMapping("candidate")
 public class CandidateController {
     @Autowired
     private CandidateRepository candidateRepository;
